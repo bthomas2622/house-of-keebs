@@ -1,0 +1,43 @@
+title: House of Keebs
+description: An open source mechanical keyboard build log blog!
+github: https://github.com/bthomas2622
+about: An open source mechanical keyboard build log blog!
+google_analytics: UA-XXXXXXXX-Y
+enableTags: true
+tagarray: []
+social:
+    - icon: fa-twitter
+      link: "https://twitter.com/HouseOfKeebs"
+    - icon: fa-github
+      link: "https://github.com/bthomas2622/house-of-keebs"
+
+share:
+  twitter_username: HouseOfKeebs
+
+urls:
+    - text: About
+      url: /about/
+    - text: Contribute
+      url: /contribute/
+    - text: XML Feed
+      url: /feed.xml
+
+url: "http://localhost:4000"
+baseurl: ""
+paginate: 25
+per_page: 25
+paginate_path: "/page/:num/"
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-gist
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: ['development']
